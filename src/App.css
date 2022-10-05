@@ -57,6 +57,7 @@ nav .nav-links a {
     font-weight: normal;
     cursor: pointer;
     padding: 10px;
+    color: white;
 }
 
 nav .nav-links a:hover {

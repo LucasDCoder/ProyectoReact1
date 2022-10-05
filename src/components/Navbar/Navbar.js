@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import CartWidget from '../CartWidget/CartWidget';
-
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   const [AbrirMenu, setAbrirMenu] = useState(false);
@@ -9,13 +9,17 @@ function Navbar() {
       <nav>
         <div className='logo'>PCGameHouse<i className='fa-solid fa-computer'></i></div>
         <ul className='nav-links' style={{transform: AbrirMenu ? 'translateX(0px)' : ''}}>
-          <li><a>Inicio</a>
+          <li>
+            <Link to={`/category/Memorias`}>Memorias</Link>
           </li>
-          <li><a>Productos</a>
+          <li>
+            <Link to={`/category/Gabinetes`}>Gabinetes</Link>
           </li>
-          <li><a>Servicios</a>
+          <li>
+            <Link to={`/category/Procesadores`}>Procesadores</Link>
           </li>
-          <li><a>Contacto</a>
+          <li>
+            <Link to={`/category/Fuentes`}>Fuentes</Link>
           </li>
         </ul>
         <div><CartWidget/></div>
