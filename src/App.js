@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './App.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Navbar from './components/Navbar/Navbar';
@@ -7,6 +8,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 function App() {
+    const [cart, setCart] = useState()
+
     return (
         
         <div className='App'>  

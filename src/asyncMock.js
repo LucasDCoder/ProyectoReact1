@@ -3,7 +3,7 @@ const products = [
         id: "1" ,
         stock:1,
         name: "Disco Sólido",
-        category: "Categoría",
+        category: "Discos Sólidos",
         price:2500,
         img: './images/imagen1.jpg',
         description: 'Descripción del producto'
@@ -30,7 +30,7 @@ const products = [
         id: "4" ,
         stock:1,
         name: "Tarjeta Gráfica",
-        category: "Categoría",
+        category: "Tarjetas Gráficas",
         price:12000,
         img: './images/imagen4.jpg',
         description: 'Descripción del producto'
@@ -58,13 +58,21 @@ const products = [
 
 
 
-export const getProducts = (categoryId) => {
-    return new Promise ((resolve) => {
+
+export const getProducts = () => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(categoryId ? products.filter(prod => prod.category === categoryId) : products)
-        }, 1000)
+            resolve(products)
+        }, 1500)
     })
 }
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+        }, 1000)
+    })}
 
 export const getProduct = (id) => {
     return new Promise((resolve) => {

@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
             <h1>Detalle de producto</h1>
             <div>
                 
-                <h1>{product.name}</h1>
+                <h1>{product?.name}</h1>
                 <h2>{product.category}</h2>
                 <h3>${product.price}</h3>
                 
