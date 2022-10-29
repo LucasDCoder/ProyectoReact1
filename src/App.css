@@ -10,6 +10,12 @@ body{
     
 }
 
+.ActiveOption{
+    border-radius: 16px;
+    background: #243e55;
+    text-decoration: none;
+}
+
 .fa-computer{
     margin-left: 0.5rem;
     font-size: 1.6rem;
