@@ -20,7 +20,7 @@ Para comenzar a visualizar el proyecto, éstos son los pasos a seguir:
 - Clonar éste repositorio. Se necesitan node y npm instalado-
 
 ```sh
-$ git clone https://github.com/LucasDCoder/ProyectoReactFinal.git
+$ git clone https://github.com/LucasDCoder/ProyectoReact1.git
 ```
 
 - Ingresar al directorio
